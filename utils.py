@@ -1,13 +1,12 @@
-# Write your code here
+# Load the libraries
 import streamlit as st
-import pandas as pd
 import requests
+import pandas as pd
 import plotly.graph_objects as go
+
 class StockAPI:
 
     def __init__(self):
-        # Load the api key
-        load_dotenv()
         self.api_key = st.secrets["API_KEY"]
         # Get the url
         self.url = "https://alpha-vantage.p.rapidapi.com/query"
